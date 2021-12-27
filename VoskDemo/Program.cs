@@ -99,6 +99,7 @@ namespace VoskDemo
             if (!string.IsNullOrEmpty(result.text))
             {
                 _textBuilder.AppendLine($"Sentence - {_lineCount++} : {result.text}");
+                _recognizer.Reset();
                 Console.Clear();
                 Console.WriteLine("Please Speak. To stop press enter");
                 Console.WriteLine(_textBuilder);
